@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Counter from './components/counter/Counter';
+import Input from './components/input/Input';
+import MyModal from './components/modal/MyModal';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Counter/>
+      <br/>
+      <hr/>
+      <Input/>
+      <br/>
+      <hr/>
+      <MyModal>
+        <h1>Hello, I'm inside the modal!</h1>
+        <p>This is some content within the modal.</p>
+      </MyModal>
     </div>
   );
 }
